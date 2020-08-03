@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cda0d107e9724779a25f91bcda0cbfcc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cda0d107e9724779a25f91bcda0cbfcc" ></div>
+        
+</body>
+<script>    
+    
+            var map_cda0d107e9724779a25f91bcda0cbfcc = L.map(
+                "map_cda0d107e9724779a25f91bcda0cbfcc",
+                {
+                    center: [18.94, -70.28],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    titles: "Casos de Covid en Republica Dominicana",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_425cfc7831ab4aee977da57afbbfe6a3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cda0d107e9724779a25f91bcda0cbfcc);
+        
+    
+            var marker_500693aa4cf94ac5bacb1c5ea0db9eb8 = L.marker(
+                [18.48, -69.87],
+                {}
+            ).addTo(map_cda0d107e9724779a25f91bcda0cbfcc);
+        
+    
+            var icon_de9f444f4c8c41d08c38b867ef5b5303 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_500693aa4cf94ac5bacb1c5ea0db9eb8.setIcon(icon_de9f444f4c8c41d08c38b867ef5b5303);
+        
+    
+        var popup_c50d25dbdb7643a18bf892d0cbe5c2f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c2adf0aefaa4c5ba56ad3c814caf884 = $(`<div id="html_0c2adf0aefaa4c5ba56ad3c814caf884" style="width: 100.0%; height: 100.0%;">Jean Carlos Sanchez</div>`)[0];
+            popup_c50d25dbdb7643a18bf892d0cbe5c2f2.setContent(html_0c2adf0aefaa4c5ba56ad3c814caf884);
+        
+
+        marker_500693aa4cf94ac5bacb1c5ea0db9eb8.bindPopup(popup_c50d25dbdb7643a18bf892d0cbe5c2f2)
+        ;
+
+        
+    
+    
+            marker_500693aa4cf94ac5bacb1c5ea0db9eb8.bindTooltip(
+                `<div>
+                     Click para ver el paciente
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f532d48f05184d07ac58eb45619c36fa = L.marker(
+                [18.8, -69.78],
+                {}
+            ).addTo(map_cda0d107e9724779a25f91bcda0cbfcc);
+        
+    
+            var icon_7bc210965e6e4961a40f61ab8430286a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f532d48f05184d07ac58eb45619c36fa.setIcon(icon_7bc210965e6e4961a40f61ab8430286a);
+        
+    
+        var popup_87dc370406fc44f486102a39fe2e4e6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eba1e155d4744f268b3ea01d43045c50 = $(`<div id="html_eba1e155d4744f268b3ea01d43045c50" style="width: 100.0%; height: 100.0%;">Arlette Figueroa</div>`)[0];
+            popup_87dc370406fc44f486102a39fe2e4e6d.setContent(html_eba1e155d4744f268b3ea01d43045c50);
+        
+
+        marker_f532d48f05184d07ac58eb45619c36fa.bindPopup(popup_87dc370406fc44f486102a39fe2e4e6d)
+        ;
+
+        
+    
+    
+            marker_f532d48f05184d07ac58eb45619c36fa.bindTooltip(
+                `<div>
+                     Click para ver el paciente
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4969fa5a835b44e3b64e4b7c7b16200e = L.marker(
+                [18.03, -71.74],
+                {}
+            ).addTo(map_cda0d107e9724779a25f91bcda0cbfcc);
+        
+    
+            var icon_7151c346b41b4710b81a97d714e437df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4969fa5a835b44e3b64e4b7c7b16200e.setIcon(icon_7151c346b41b4710b81a97d714e437df);
+        
+    
+        var popup_4339317e9bfc47b9a5cc0c5df94c128e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fba3c5479c64c81bca3446e180727b8 = $(`<div id="html_8fba3c5479c64c81bca3446e180727b8" style="width: 100.0%; height: 100.0%;">Maria Lorenzo</div>`)[0];
+            popup_4339317e9bfc47b9a5cc0c5df94c128e.setContent(html_8fba3c5479c64c81bca3446e180727b8);
+        
+
+        marker_4969fa5a835b44e3b64e4b7c7b16200e.bindPopup(popup_4339317e9bfc47b9a5cc0c5df94c128e)
+        ;
+
+        
+    
+    
+            marker_4969fa5a835b44e3b64e4b7c7b16200e.bindTooltip(
+                `<div>
+                     Click para ver el paciente
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
